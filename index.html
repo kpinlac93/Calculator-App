@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <main>
+    <section class="keypad">
+      <section class="header">
+        <h1 class="logo">calc</h1>
+        <section class="theme-toggle"></section>
+      </section>
+      <section class="output">
+        <p class="operationSign"></p>
+        <p class="outputNum">0</p>
+      </section>
+      <a onclick="addNumber(7)">
+        <p>7</p>
+      </a>
+      <a onclick="addNumber(8)">
+        <p>8</p>
+      </a>
+      <a onclick="addNumber(9)">
+        <p>9</p>
+      </a>
+      <a onclick="deleteButton()" class="del">
+        <p>del</p>
+      </a>
+      <a onclick="addNumber(4)">
+        <p>4</p>
+      </a>
+      <a onclick="addNumber(5)">
+        <p>5</p>
+      </a>
+      <a onclick="addNumber(6)">
+        <p>6</p>
+      </a>
+      <a onclick="handleOperationSign('+')">
+        <p>+</p>
+      </a>
+      <a onclick="addNumber(1)">
+        <p>1</p>
+      </a>
+      <a onclick="addNumber(2)">
+        <p>2</p>
+      </a>
+      <a onclick="addNumber(3)">
+        <p>3</p>
+      </a>
+      <a onclick="handleOperationSign('-')">
+        <p>-</p>
+      </a>
+      <a>
+        <p>.</p>
+      </a>
+      <a onclick="addNumber(0)">
+        <p>0</p>
+      </a>
+      <a onclick="handleOperationSign('/')">
+        <p>/</p>
+      </a>
+      <a onclick="handleOperationSign('x')">
+        <p>x</p>
+      </a>
+      <a onclick="clearOutput()" class="reset">
+        <p>reset</p>
+      </a>
+      <a onclick="handleEqual()" class="equal">
+        <p>=</p>
+      </a>
+      <a onclick="makeOutputNegative()" class="negative">
+        <p>-e</p>
+      </a>
+      <a onclick="makeOutputPositive()" class="positive">
+        <p>+e</p>
+      </a>
+      <a onclick="handleExponent()" class="positive">
+        <p>e*e</p>
+      </a>
+      <a onclick="handleSquareRoot()" class="positive">
+        <p>sqrt</p>
+      </a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
