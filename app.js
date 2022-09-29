@@ -30,6 +30,14 @@ var initialValue = 0;
 var resetValue = false;
 function addNumber(num) {
     currentOutput = outputText.innerHTML;
+    if (num == ".") {
+        if (outputText.innerHTML.includes(".") == true) {
+            return
+        }
+        if (outputText.innerHTML == "0") {
+            return
+        }
+    }
     if (resetValue == true) {
         currentOutput = "";
         outputText.innerHTML = currentOutput;
